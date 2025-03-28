@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/gteufelberger/czml-rs/compare/v0.1.2...v0.2.0) (2025-03-28)
+
+
+### Features
+
+* Add support for model field ([a18f539](https://github.com/gteufelberger/czml-rs/commit/a18f539f3a34c59982fbdd83fe9a77f6bb927f4b))
+* Add support for orientation field ([a71caa8](https://github.com/gteufelberger/czml-rs/commit/a71caa88de20235665a0296ea48e68f2479eb633))
+
+
+### Bug Fixes
+
+* **docs:** Update incorrect doc comment ([10996ca](https://github.com/gteufelberger/czml-rs/commit/10996ca899870b623a1c8af2942d660eb51e3d11))
+* Remove leftover init code ([96a9312](https://github.com/gteufelberger/czml-rs/commit/96a9312886dce609232860c212e9570ee1f7adac))
+
 ## [0.1.2](https://github.com/gteufelberger/czml-rs/compare/v0.1.1...v0.1.2) (2025-03-28)
 
 
