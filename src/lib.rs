@@ -1,6 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 mod clock;
+mod packet;
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
@@ -31,19 +32,10 @@ pub struct Packet {
     pub description: Option<String>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub model: Option<Model>,
+    pub model: Option<packet::Model>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub orientation: Option<Orientation>,
-}
-
-/// 3D model struct
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct Model {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub gltf: Option<String>,
 }
 
 /// Orientation
