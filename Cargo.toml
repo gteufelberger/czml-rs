@@ -3,6 +3,7 @@ name = "czml"
 version = "0.1.1"
 edition = "2021"
 
+description = "A library for serializing/deserializing CZML content"
 license = "MIT"
 repository = "https://github.com/gteufelberger/czml-rs/"
 
