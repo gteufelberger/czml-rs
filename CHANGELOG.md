@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/gteufelberger/czml-rs/compare/v0.1.1...v0.1.2) (2025-03-28)
+
+
+### Bug Fixes
+
+* Set description in Cargo.toml ([fe0d188](https://github.com/gteufelberger/czml-rs/commit/fe0d18810c7ae6a8584d6785dbefc5a1124b6967))
+
 ## [0.1.1](https://github.com/gteufelberger/czml-rs/compare/v0.1.0...v0.1.1) (2025-03-28)
 
 
