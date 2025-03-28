@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 
+mod billboard;
 mod clock;
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
@@ -15,45 +16,13 @@ pub struct Billboard {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub scale: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub eye_offset: Option<EyeOffset>,
+    pub eye_offset: Option<billboard::EyeOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub pixel_offset: Option<PixelOffset>,
+    pub pixel_offset: Option<billboard::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub horizontal_origin: Option<HorizontalOrigin>,
+    pub horizontal_origin: Option<billboard::HorizontalOrigin>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub vertical_origin: Option<VerticalOrigin>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct EyeOffset {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub cartesian: Option<Vec<f64>>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct PixelOffset {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub cartesian2: Option<Vec<f64>>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub enum HorizontalOrigin {
-    #[serde(rename = "CENTER")]
-    Center,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub enum VerticalOrigin {
-    #[serde(rename = "CENTER")]
-    Center,
+    pub vertical_origin: Option<billboard::VerticalOrigin>,
 }
 
 /// A clock used to drive the time-dynamic aspects of a document.
