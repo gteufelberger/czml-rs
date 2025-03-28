@@ -1,0 +1,30 @@
+name: release-please
+
+# Only run on main branch
+on:
+  push:
+    branches:
+      - main
+
+# Set necessary permissions
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          release-type: rust
+
+      # If a release was created, checkout...
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+      # ...and publish to crates.io
+      - uses: katyo/publish-crates@v2
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+            registry-token: ${{ secrets.CARGO_REGISTRY_TOKEN }}
