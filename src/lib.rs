@@ -35,16 +35,7 @@ pub struct Packet {
     pub model: Option<packet::Model>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub orientation: Option<Orientation>,
-}
-
-/// Orientation
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct Orientation {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub unit_quaternion: Option<[f64; 4]>,
+    pub orientation: Option<packet::Orientation>,
 }
 
 /// A clock used to drive the time-dynamic aspects of a document.
