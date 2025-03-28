@@ -34,7 +34,7 @@ pub struct Packet {
     pub model: Option<Model>,
 }
 
-/// A clock used to drive the time-dynamic aspects of a document.
+/// 3D model struct
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
