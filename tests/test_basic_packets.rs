@@ -16,6 +16,7 @@ fn test_just_document_packet() {
         description: None,
         clock: None,
         billboard: None,
+        model: None,
     };
 
     assert_eq!(actual, expected[0]);

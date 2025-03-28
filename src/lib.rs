@@ -29,6 +29,18 @@ pub struct Packet {
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub billboard: Option<Billboard>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub model: Option<Model>,
+}
+
+/// A clock used to drive the time-dynamic aspects of a document.
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Model {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub gltf: Option<String>,
 }
 
 /// A clock used to drive the time-dynamic aspects of a document.
