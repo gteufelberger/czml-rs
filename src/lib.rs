@@ -21,7 +21,7 @@ pub struct Packet {
     pub availability: Option<String>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub billboard: Option<Billboard>,
+    pub billboard: Option<packet::Billboard>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub clock: Option<packet::Clock>,
@@ -35,60 +35,6 @@ pub struct Packet {
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub orientation: Option<packet::Orientation>,
-}
-
-/// A billboard is a viewport-aligned image positioned in the 3D scene
-/// https://cesium.com/learn/cesiumjs/ref-doc/Billboard.html
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct Billboard {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<bool>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub image: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub scale: Option<f64>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub eye_offset: Option<EyeOffset>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub pixel_offset: Option<PixelOffset>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub horizontal_origin: Option<HorizontalOrigin>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub vertical_origin: Option<VerticalOrigin>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct EyeOffset {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub cartesian: Option<Vec<f64>>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub struct PixelOffset {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub cartesian2: Option<Vec<f64>>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub enum HorizontalOrigin {
-    #[serde(rename = "CENTER")]
-    Center,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub enum VerticalOrigin {
-    #[serde(rename = "CENTER")]
-    Center,
 }
 
 pub fn add(left: u64, right: u64) -> u64 {
