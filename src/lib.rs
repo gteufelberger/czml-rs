@@ -20,15 +20,15 @@ pub struct Packet {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub availability: Option<String>,
 
-    /// A plain text or HTML description of the packet
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub description: Option<String>,
+    pub billboard: Option<Billboard>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub clock: Option<Clock>,
 
+    /// A plain text or HTML description of the packet
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub billboard: Option<Billboard>,
+    pub description: Option<String>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub model: Option<Model>,

@@ -13,9 +13,9 @@ fn test_just_document_packet() {
         name: None,
         version: Some("1.0".to_string()),
         availability: None,
-        description: None,
-        clock: None,
         billboard: None,
+        clock: None,
+        description: None,
         model: None,
         orientation: None,
     };
