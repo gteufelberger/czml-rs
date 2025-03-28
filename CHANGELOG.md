@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/gteufelberger/czml-rs/compare/v0.1.0...v0.1.1) (2025-03-28)
+
+
+### Bug Fixes
+
+* Set license in Cargo.toml ([f45655f](https://github.com/gteufelberger/czml-rs/commit/f45655fd7246f5814607e906e6b604a7ac5d3990))
+
 ## 0.1.0 (2025-03-28)
 
 
