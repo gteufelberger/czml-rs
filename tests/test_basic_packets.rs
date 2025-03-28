@@ -14,6 +14,7 @@ fn test_just_document_packet() {
         version: Some("1.0".to_string()),
         availability: None,
         description: None,
+        billboard: None,
     };
 
     assert_eq!(actual, expected[0]);
