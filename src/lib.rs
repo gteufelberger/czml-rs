@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct CzmlPacket {
+pub struct Packet {
     pub id: String,
 
     /// Optional human-readable name
