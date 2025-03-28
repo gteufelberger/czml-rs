@@ -1,5 +1,7 @@
 use serde::{Deserialize, Serialize};
 
+mod clock;
+
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
@@ -23,7 +25,27 @@ pub struct Packet {
     pub description: Option<String>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub clock: Option<Clock>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub billboard: Option<Billboard>,
+}
+
+/// A clock used to drive the time-dynamic aspects of a document.
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Clock {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub interval: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub current_time: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub multiplier: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub range: Option<clock::Range>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub step: Option<clock::Step>,
 }
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
