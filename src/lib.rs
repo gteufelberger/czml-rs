@@ -50,4 +50,19 @@ mod tests {
         let result = add(2, 2);
         assert_eq!(result, 4);
     }
+
+    #[test]
+    fn create_most_basic_packet() {
+        let _ = Packet {
+            id: "document".to_string(),
+            name: None,
+            version: Some("1.0".to_string()),
+            availability: None,
+            billboard: None,
+            clock: None,
+            description: None,
+            model: None,
+            orientation: None,
+        };
+    }
 }
