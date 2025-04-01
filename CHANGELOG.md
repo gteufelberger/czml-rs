@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/gteufelberger/czml-rs/compare/v0.2.0...v0.2.1) (2025-04-01)
+
+
+### Bug Fixes
+
+* Make packet module public ([c7dd26c](https://github.com/gteufelberger/czml-rs/commit/c7dd26c1f71fba44e81b5229db2a79618db5461c))
+
 ## [0.2.0](https://github.com/gteufelberger/czml-rs/compare/v0.1.2...v0.2.0) (2025-03-28)
 
 
