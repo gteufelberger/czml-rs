@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-mod packet;
+pub mod packet;
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
