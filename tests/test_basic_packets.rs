@@ -21,6 +21,7 @@ fn test_just_document_packet() {
         orientation: None,
         path: None,
         position: None,
+        properties: None,
     };
 
     assert_eq!(actual, expected[0]);

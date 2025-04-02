@@ -44,6 +44,9 @@ pub struct Packet {
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub position: Option<packet::Position>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub properties: Option<serde_json::Value>,
 }
 
 #[cfg(test)]
@@ -65,6 +68,7 @@ mod tests {
             orientation: None,
             path: None,
             position: None,
+            properties: None,
         };
     }
 }
