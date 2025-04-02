@@ -1,0 +1,33 @@
+[
+  {
+    "id": "document",
+    "version": "1.0"
+  },
+  {
+    "availability": "2025-03-03T10:16:01+00:00/2025-03-03T20:16:01+00:00",
+    "id": "something",
+    "name": "Something",
+    "path": {
+      "color": {
+        "rgba": [
+          255,
+          255,
+          255,
+          255
+        ]
+      },
+      "outlineColor": {
+        "rgba": [
+          0,
+          0,
+          0,
+          255
+        ]
+      },
+      "leadTime": 0,
+      "trailTime": 120,
+      "outlineWidth": 2,
+      "width": 5
+    }
+  }
+]

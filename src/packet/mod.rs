@@ -87,3 +87,22 @@ pub struct Orientation {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub unit_quaternion: Option<[f64; 4]>,
 }
+
+/// Path
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Path {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub color: Option<primitives::Color>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub outline_color: Option<primitives::Color>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub outline_width: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub lead_time: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub trail_time: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub width: Option<u32>,
+}
