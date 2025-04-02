@@ -18,7 +18,7 @@ pub struct Packet {
 
     /// Time interval of validity (ISO 8601 string or array of intervals)
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub availability: Option<String>,
+    pub availability: Option<packet::primitives::StringOrVec>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub billboard: Option<packet::Billboard>,

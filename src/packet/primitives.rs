@@ -37,6 +37,13 @@ pub enum ReferenceFrames {
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(untagged)]
+pub enum StringOrVec {
+    Single(String),
+    Multiple(Vec<String>),
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 pub struct Color {
     pub rgba: [u8; 4],
 }
