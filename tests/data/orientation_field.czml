@@ -1,24 +1,24 @@
 [
-    {
-        "id": "document",
-        "version": "1.0",
-        "clock": {
-            "interval": "2018-07-19T15:18:00Z/2018-07-19T15:18:30Z",
-            "currentTime": "2018-07-19T15:18:00Z",
-            "multiplier": 2,
-            "range": "LOOP_STOP",
-            "step": "SYSTEM_CLOCK_MULTIPLIER"
-        }
-    },
-    {
-        "id": "CesiumMilkTruck",
-        "orientation": {
-            "unitQuaternion": [
-                0.3084011337938999,
-                0.3210181022701266,
-                -0.45850421987074924,
-                0.7686388857813198
-            ]
-        }
+  {
+    "id": "document",
+    "version": "1.0",
+    "clock": {
+      "interval": "2018-07-19T15:18:00Z/2018-07-19T15:18:30Z",
+      "currentTime": "2018-07-19T15:18:00Z",
+      "multiplier": 2,
+      "range": "LOOP_STOP",
+      "step": "SYSTEM_CLOCK_MULTIPLIER"
     }
+  },
+  {
+    "id": "CesiumMilkTruck",
+    "orientation": {
+      "unitQuaternion": [
+        0.3084011337938999,
+        0.3210181022701266,
+        -0.45850421987074924,
+        0.7686388857813198
+      ]
+    }
+  }
 ]
