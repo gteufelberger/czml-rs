@@ -51,6 +51,8 @@ pub struct Model {
     pub gltf: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub scale: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub minimum_pixel_size: Option<u32>,
 }
 
 /// Orientation

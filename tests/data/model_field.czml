@@ -14,6 +14,7 @@
         "id": "CesiumMilkTruck",
         "model": {
             "scale": 2.0,
+            "minimumPixelSize": 128,
             "gltf": "models/CesiumMilkTruck/CesiumMilkTruck.glb"
         }
     }
