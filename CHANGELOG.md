@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/gteufelberger/czml-rs/compare/v0.5.0...v0.6.0) (2025-04-02)
+
+
+### Features
+
+* Add support for `properties` object ([3c50420](https://github.com/gteufelberger/czml-rs/commit/3c504204b23490d1770141143d246dd896133a1b))
+
+
+### Bug Fixes
+
+* Make `cartesian` field in `Position` struct public ([d98c475](https://github.com/gteufelberger/czml-rs/commit/d98c475e5d61bbadcad5e86c15f80215efa65d5a))
+
 ## [0.5.0](https://github.com/gteufelberger/czml-rs/compare/v0.4.1...v0.5.0) (2025-04-02)
 
 
