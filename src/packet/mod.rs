@@ -3,6 +3,7 @@ use serde::{Deserialize, Serialize};
 pub mod billboard;
 pub mod clock;
 pub mod label;
+pub mod polyline;
 pub mod primitives;
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
@@ -105,6 +106,23 @@ pub struct Path {
     pub trail_time: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub width: Option<u32>,
+}
+
+/// Polyline
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Polyline {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    width: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    show: Option<Vec<primitives::ShowInterval>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    arc_type: Option<primitives::ArcType>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    material: Option<polyline::Material>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    positions: Option<polyline::Position>,
 }
 
 /// Path

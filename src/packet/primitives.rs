@@ -2,6 +2,12 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum ArcType {
+    None,
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(untagged)]
 pub enum Cartesian {
     Timestamp(String),
@@ -34,6 +40,13 @@ pub struct PixelOffset {
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ReferenceFrames {
     Inertial,
+}
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct ShowInterval {
+    pub interval: String,
+    pub boolean: bool,
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
