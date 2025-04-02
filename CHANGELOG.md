@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/gteufelberger/czml-rs/compare/v0.4.1...v0.5.0) (2025-04-02)
+
+
+### Features
+
+* Add support for `position` object ([6660c4a](https://github.com/gteufelberger/czml-rs/commit/6660c4aa7e340aab31e220fff61e156fea8f8f80))
+
 ## [0.4.1](https://github.com/gteufelberger/czml-rs/compare/v0.4.0...v0.4.1) (2025-04-02)
 
 
