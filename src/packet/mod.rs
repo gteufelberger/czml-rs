@@ -49,6 +49,8 @@ pub struct Clock {
 pub struct Model {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub gltf: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub scale: Option<f64>,
 }
 
 /// Orientation
