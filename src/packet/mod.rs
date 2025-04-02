@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 
 mod billboard;
 mod clock;
+mod label;
 mod primitives;
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
@@ -41,6 +42,28 @@ pub struct Clock {
     pub range: Option<clock::Range>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub step: Option<clock::Step>,
+}
+
+/// A text label
+/// https://cesium.com/learn/cesiumjs/ref-doc/Label.html
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Label {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub show: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub pixel_offset: Option<billboard::PixelOffset>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub fill_color: Option<primitives::Color>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub horizontal_origin: Option<primitives::Origin>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub vertical_origin: Option<primitives::Origin>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub style: Option<label::Style>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub text: Option<String>,
 }
 
 /// 3D model struct

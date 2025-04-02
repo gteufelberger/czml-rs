@@ -8,3 +8,8 @@ pub enum Origin {
     Center,
     Left,
 }
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+pub struct Color {
+    pub rgba: [u8; 4],
+}

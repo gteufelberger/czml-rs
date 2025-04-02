@@ -1,0 +1,30 @@
+[
+    {
+      "id": "document",
+      "version": "1.0"
+    },
+    {
+      "availability": "2025-03-03T10:16:01+00:00/2025-03-03T20:16:01+00:00",
+      "id": "Something",
+      "label": {
+        "fillColor": {
+          "rgba": [
+            255,
+            255,
+            0,
+            255
+          ]
+        },
+        "horizontalOrigin": "LEFT",
+        "pixelOffset": {
+          "cartesian2": [
+            20,
+            0
+          ]
+        },
+        "show": true,
+        "style": "FILL_AND_OUTLINE",
+        "text": "Something"
+      }
+    }
+  ]

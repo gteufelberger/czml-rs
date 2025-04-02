@@ -31,6 +31,9 @@ pub struct Packet {
     pub description: Option<String>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub label: Option<packet::Label>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub model: Option<packet::Model>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -51,6 +54,7 @@ mod tests {
             billboard: None,
             clock: None,
             description: None,
+            label: None,
             model: None,
             orientation: None,
         };

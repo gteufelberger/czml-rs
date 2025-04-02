@@ -16,6 +16,7 @@ fn test_just_document_packet() {
         billboard: None,
         clock: None,
         description: None,
+        label: None,
         model: None,
         orientation: None,
     };
