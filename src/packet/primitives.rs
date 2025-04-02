@@ -2,6 +2,19 @@
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(untagged)]
+pub enum Cartesian {
+    Timestamp(String),
+    Coordinate(f64),
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum InterpolationAlgorithms {
+    Lagrange,
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 #[serde(deny_unknown_fields)]
 pub enum Origin {
@@ -15,6 +28,12 @@ pub enum Origin {
 pub struct PixelOffset {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub cartesian2: Option<Vec<f64>>,
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum ReferenceFrames {
+    Inertial,
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]

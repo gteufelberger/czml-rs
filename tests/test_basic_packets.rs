@@ -20,6 +20,7 @@ fn test_just_document_packet() {
         model: None,
         orientation: None,
         path: None,
+        position: None,
     };
 
     assert_eq!(actual, expected[0]);

@@ -41,6 +41,9 @@ pub struct Packet {
 
     #[serde(skip_serializing_if = "Option::is_none")]
     pub path: Option<packet::Path>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub position: Option<packet::Position>,
 }
 
 #[cfg(test)]
@@ -61,6 +64,7 @@ mod tests {
             model: None,
             orientation: None,
             path: None,
+            position: None,
         };
     }
 }
