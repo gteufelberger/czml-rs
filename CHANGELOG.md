@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/gteufelberger/czml-rs/compare/v0.6.0...v0.6.1) (2025-04-02)
+
+
+### Bug Fixes
+
+* Remove accidentally introduced `position` field ([ee07545](https://github.com/gteufelberger/czml-rs/commit/ee07545b8f6c269085b6c876b2923ca232ddf0c9))
+
 ## [0.6.0](https://github.com/gteufelberger/czml-rs/compare/v0.5.0...v0.6.0) (2025-04-02)
 
 
