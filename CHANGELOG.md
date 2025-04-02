@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/gteufelberger/czml-rs/compare/v0.6.1...v0.7.0) (2025-04-02)
+
+
+### Features
+
+* Add support for `parent` field ([dada822](https://github.com/gteufelberger/czml-rs/commit/dada82213071476039a45b99ca5af6ac2b97b69b))
+
 ## [0.6.1](https://github.com/gteufelberger/czml-rs/compare/v0.6.0...v0.6.1) (2025-04-02)
 
 
