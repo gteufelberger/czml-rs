@@ -20,7 +20,7 @@ pub struct Billboard {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub eye_offset: Option<billboard::EyeOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub pixel_offset: Option<billboard::PixelOffset>,
+    pub pixel_offset: Option<primitives::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub horizontal_origin: Option<primitives::Origin>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -53,7 +53,7 @@ pub struct Label {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub show: Option<bool>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub pixel_offset: Option<billboard::PixelOffset>,
+    pub pixel_offset: Option<primitives::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub fill_color: Option<primitives::Color>,
     #[serde(skip_serializing_if = "Option::is_none")]
