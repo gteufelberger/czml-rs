@@ -19,15 +19,9 @@ pub struct PixelOffset {
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
-pub enum HorizontalOrigin {
+pub enum Origin {
     #[serde(rename = "CENTER")]
     Center,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
-pub enum VerticalOrigin {
-    #[serde(rename = "CENTER")]
-    Center,
+    #[serde(rename = "LEFT")]
+    Left,
 }

@@ -20,9 +20,9 @@ pub struct Billboard {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub pixel_offset: Option<billboard::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub horizontal_origin: Option<billboard::HorizontalOrigin>,
+    pub horizontal_origin: Option<billboard::Origin>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub vertical_origin: Option<billboard::VerticalOrigin>,
+    pub vertical_origin: Option<billboard::Origin>,
 }
 
 /// A clock used to drive the time-dynamic aspects of a document.
