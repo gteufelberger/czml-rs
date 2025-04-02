@@ -1,6 +1,6 @@
 {
-    "editor.formatOnSave": true,
-    "files.associations": {
-        "*.czml": "json"
-    }
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.czml": "json"
+  }
 }
