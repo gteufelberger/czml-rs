@@ -1,9 +1,9 @@
 use serde::{Deserialize, Serialize};
 
-mod billboard;
-mod clock;
-mod label;
-mod primitives;
+pub mod billboard;
+pub mod clock;
+pub mod label;
+pub mod primitives;
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
 /// https://cesium.com/learn/cesiumjs/ref-doc/Billboard.html
