@@ -40,6 +40,9 @@ pub struct Packet {
     pub orientation: Option<packet::Orientation>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub parent: Option<String>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub path: Option<packet::Path>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -66,6 +69,7 @@ mod tests {
             label: None,
             model: None,
             orientation: None,
+            parent: None,
             path: None,
             position: None,
             properties: None,

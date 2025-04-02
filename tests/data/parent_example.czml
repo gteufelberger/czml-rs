@@ -1,0 +1,24 @@
+[
+    {
+        "id": "document",
+        "name": "simple",
+        "version": "1.0",
+        "clock": {
+            "interval": "2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",
+            "currentTime": "2012-03-15T10:00:00Z",
+            "multiplier": 60,
+            "range": "LOOP_STOP",
+            "step": "SYSTEM_CLOCK_MULTIPLIER"
+        }
+    },
+    {
+        "id": "9927edc4-e87a-4e1f-9b8b-0bfb3b05b227",
+        "name": "Accesses",
+        "description": "List of Accesses"
+    },
+    {
+        "id": "Satellite/Geoeye1-to-Satellite/ISS",
+        "name": "Geoeye1 to ISS",
+        "parent": "9927edc4-e87a-4e1f-9b8b-0bfb3b05b227"
+    }
+]
