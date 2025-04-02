@@ -115,8 +115,6 @@ pub struct Position {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub cartesian: Option<Vec<primitives::Cartesian>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub position: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none")]
     pub epoch: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub interpolation_algorithm: Option<primitives::InterpolationAlgorithms>,
