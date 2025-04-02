@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 
 mod billboard;
 mod clock;
+mod primitives;
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
 /// https://cesium.com/learn/cesiumjs/ref-doc/Billboard.html
@@ -20,9 +21,9 @@ pub struct Billboard {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub pixel_offset: Option<billboard::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub horizontal_origin: Option<billboard::Origin>,
+    pub horizontal_origin: Option<primitives::Origin>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub vertical_origin: Option<billboard::Origin>,
+    pub vertical_origin: Option<primitives::Origin>,
 }
 
 /// A clock used to drive the time-dynamic aspects of a document.
