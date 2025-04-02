@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/gteufelberger/czml-rs/compare/v0.2.1...v0.3.0) (2025-04-02)
+
+
+### Features
+
+* Add support for `minimumPixelSize` field ([8e62fad](https://github.com/gteufelberger/czml-rs/commit/8e62fad0c06ae085f4113d1d96061fc9dc0fb858))
+* Add support for scale field in model ([86928b9](https://github.com/gteufelberger/czml-rs/commit/86928b915ab6ef6bf3e3c139541c924da26d010d))
+
 ## [0.2.1](https://github.com/gteufelberger/czml-rs/compare/v0.2.0...v0.2.1) (2025-04-01)
 
 
