@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/gteufelberger/czml-rs/compare/v0.4.0...v0.4.1) (2025-04-02)
+
+
+### Bug Fixes
+
+* Make submodules public ([5a03912](https://github.com/gteufelberger/czml-rs/commit/5a039121d730fc634709a472ddeff94fe4337bdd))
+
 ## [0.4.0](https://github.com/gteufelberger/czml-rs/compare/v0.3.0...v0.4.0) (2025-04-02)
 
 
