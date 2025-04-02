@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/gteufelberger/czml-rs/compare/v0.3.0...v0.4.0) (2025-04-02)
+
+
+### Features
+
+* Add support for `label` object ([b6d4c77](https://github.com/gteufelberger/czml-rs/commit/b6d4c775249efd2b45bdcc184363d78acfa026c8))
+* Add support for `path` object ([fdaf34e](https://github.com/gteufelberger/czml-rs/commit/fdaf34ec546cf47b854ccd676e2c8476da487a4e))
+
 ## [0.3.0](https://github.com/gteufelberger/czml-rs/compare/v0.2.1...v0.3.0) (2025-04-02)
 
 
