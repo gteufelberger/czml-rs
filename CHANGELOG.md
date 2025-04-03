@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.1](https://github.com/gteufelberger/czml-rs/compare/v0.9.0...v0.9.1) (2025-04-03)
+
+
+### Bug Fixes
+
+* Make `material` field of `path` object public ([ebb1db9](https://github.com/gteufelberger/czml-rs/commit/ebb1db9cc9d491b7b1f9ab8065c2654d88c33e39))
+* Make fields of `polyline` objects public ([fe39644](https://github.com/gteufelberger/czml-rs/commit/fe39644b6efe88a57b4ba572ba7e674784245072))
+
 ## [0.9.0](https://github.com/gteufelberger/czml-rs/compare/v0.8.0...v0.9.0) (2025-04-03)
 
 
