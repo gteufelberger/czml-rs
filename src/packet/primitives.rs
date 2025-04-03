@@ -64,3 +64,11 @@ pub struct ShowInterval {
 pub struct Color {
     pub rgba: [u8; 4],
 }
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct NumberInterval {
+    pub interval: String,
+    pub number: u32,
+}

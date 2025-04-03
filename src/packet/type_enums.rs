@@ -13,3 +13,10 @@ pub enum BooleanOrShowObjectVec {
     Single(bool),
     Multiple(Vec<super::primitives::ShowInterval>),
 }
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(untagged)]
+pub enum IntegerOrNumberObjectVec {
+    Single(u32),
+    Multiple(Vec<super::primitives::NumberInterval>),
+}
