@@ -5,6 +5,7 @@ pub mod clock;
 pub mod label;
 pub mod polyline;
 pub mod primitives;
+pub mod type_enums;
 
 /// A billboard is a viewport-aligned image positioned in the 3D scene
 /// https://cesium.com/learn/cesiumjs/ref-doc/Billboard.html
@@ -13,7 +14,7 @@ pub mod primitives;
 #[serde(deny_unknown_fields)]
 pub struct Billboard {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<primitives::BooleanOrShowObjectVec>,
+    pub show: Option<type_enums::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub image: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -52,7 +53,7 @@ pub struct Clock {
 #[serde(deny_unknown_fields)]
 pub struct Label {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<primitives::BooleanOrShowObjectVec>,
+    pub show: Option<type_enums::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub pixel_offset: Option<primitives::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -101,7 +102,7 @@ pub struct Orientation {
 #[serde(deny_unknown_fields)]
 pub struct Path {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<primitives::BooleanOrShowObjectVec>,
+    pub show: Option<type_enums::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<primitives::Color>,
     #[serde(skip_serializing_if = "Option::is_none")]

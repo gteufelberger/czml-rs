@@ -52,20 +52,6 @@ pub struct ShowInterval {
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(untagged)]
-pub enum StringOrVec {
-    Single(String),
-    Multiple(Vec<String>),
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(untagged)]
-pub enum BooleanOrShowObjectVec {
-    Single(bool),
-    Multiple(Vec<ShowInterval>),
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
 pub struct Color {
     pub rgba: [u8; 4],
 }
