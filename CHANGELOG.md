@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.9.0](https://github.com/gteufelberger/czml-rs/compare/v0.8.0...v0.9.0) (2025-04-03)
+
+
+### Features
+
+* Add enum state `bottom` to `Origin` enum ([338c265](https://github.com/gteufelberger/czml-rs/commit/338c26511dfdc06c4f76874ae50036a13b8d47a1))
+* Add enum state `fill` to `Style` enum ([d1496f1](https://github.com/gteufelberger/czml-rs/commit/d1496f1128c333f34bf2968ecf54fa33003a20b1))
+* Add enum state `right` to `Origin` enum ([87908ff](https://github.com/gteufelberger/czml-rs/commit/87908ff69cb51821a5fa1d8356d225bb8c575083))
+* Add support for `font` field in `label` object ([b51118c](https://github.com/gteufelberger/czml-rs/commit/b51118c7f5fa0f4fc6cc933087ab2a32a3c693b4))
+* Add support for `material` field in `path` object ([f862666](https://github.com/gteufelberger/czml-rs/commit/f862666e4ee3c3ce35411fbac4cc3de6fbc2f7a2))
+* Add support for `outline_color` field in `label` object ([32a093b](https://github.com/gteufelberger/czml-rs/commit/32a093ba6bd3570279934a2682f200df79d9b019))
+* Add support for `scale` field in `label` object ([52f42ba](https://github.com/gteufelberger/czml-rs/commit/52f42ba1d60fc3af3f4961c3787030ffa0000e72))
+* Add support for `show` field in `path` object ([0bd75b2](https://github.com/gteufelberger/czml-rs/commit/0bd75b2c8c3126599ff0d43de015d5dc6f05baa8))
+* Add support for color intervals ([3ef7c88](https://github.com/gteufelberger/czml-rs/commit/3ef7c884e088d1643228826e1934e93d6fe1a256))
+* Add support for number intervals ([a5858da](https://github.com/gteufelberger/czml-rs/commit/a5858da43bcc1a844847b3b45eaddd6f9f694f51))
+* Handle case when `show` is set based on an interval ([949e112](https://github.com/gteufelberger/czml-rs/commit/949e112d7b97db2a129c879be08af71b221a7b2c))
+
 ## [0.8.0](https://github.com/gteufelberger/czml-rs/compare/v0.7.0...v0.8.0) (2025-04-03)
 
 
