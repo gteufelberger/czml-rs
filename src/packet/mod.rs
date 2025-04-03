@@ -58,6 +58,8 @@ pub struct Label {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub fill_color: Option<primitives::Color>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub font: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub horizontal_origin: Option<primitives::Origin>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub vertical_origin: Option<primitives::Origin>,
