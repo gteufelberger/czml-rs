@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.8.0](https://github.com/gteufelberger/czml-rs/compare/v0.7.0...v0.8.0) (2025-04-03)
+
+
+### Features
+
+* Add support for `polyline` field ([727d0a3](https://github.com/gteufelberger/czml-rs/commit/727d0a349c6c6b062c00949948d9e44ab41cff63))
+* Handle availabilities as both single entry and arrays ([e98c7d8](https://github.com/gteufelberger/czml-rs/commit/e98c7d82cc4121b641bd335476388bae979c420a))
+
+
+### Bug Fixes
+
+* Fill out missing field ([cc04dc5](https://github.com/gteufelberger/czml-rs/commit/cc04dc5f972599048e745157e7721d7acf139179))
+
 ## [0.7.0](https://github.com/gteufelberger/czml-rs/compare/v0.6.1...v0.7.0) (2025-04-02)
 
 
