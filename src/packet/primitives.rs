@@ -21,6 +21,14 @@ pub enum InterpolationAlgorithms {
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Material {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub solid_color: Option<super::polyline::SolidColor>,
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 #[serde(deny_unknown_fields)]
 pub enum Origin {

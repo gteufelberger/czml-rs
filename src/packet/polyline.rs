@@ -11,14 +11,6 @@ pub struct SolidColor {
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
-pub struct Material {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub solid_color: Option<SolidColor>,
-}
-
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
-#[serde(rename_all = "camelCase")]
-#[serde(deny_unknown_fields)]
 pub struct Position {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub references: Option<Vec<String>>,

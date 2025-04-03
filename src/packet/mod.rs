@@ -129,7 +129,7 @@ pub struct Polyline {
     #[serde(skip_serializing_if = "Option::is_none")]
     arc_type: Option<primitives::ArcType>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    material: Option<polyline::Material>,
+    material: Option<primitives::Material>,
     #[serde(skip_serializing_if = "Option::is_none")]
     positions: Option<polyline::Position>,
 }
