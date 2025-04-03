@@ -5,5 +5,6 @@ use serde::{Deserialize, Serialize};
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 #[serde(deny_unknown_fields)]
 pub enum Style {
+    Fill,
     FillAndOutline,
 }
