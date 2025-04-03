@@ -51,6 +51,7 @@ pub struct PixelOffset {
 pub enum ReferenceFrames {
     Inertial,
 }
+
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
