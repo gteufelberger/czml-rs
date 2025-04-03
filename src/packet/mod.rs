@@ -64,6 +64,8 @@ pub struct Label {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub vertical_origin: Option<primitives::Origin>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub scale: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub style: Option<label::Style>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub text: Option<String>,
