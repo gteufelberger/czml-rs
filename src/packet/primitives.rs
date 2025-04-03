@@ -68,6 +68,14 @@ pub struct Color {
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
+pub struct ColorInterval {
+    pub interval: String,
+    pub rgba: [u8; 4],
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
 pub struct NumberInterval {
     pub interval: String,
     pub number: u32,

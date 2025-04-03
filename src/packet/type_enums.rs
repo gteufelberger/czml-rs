@@ -20,3 +20,10 @@ pub enum IntegerOrNumberObjectVec {
     Single(u32),
     Multiple(Vec<super::primitives::NumberInterval>),
 }
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(untagged)]
+pub enum ColorOrColorInterval {
+    Single(super::primitives::Color),
+    Multiple(Vec<super::primitives::ColorInterval>),
+}
