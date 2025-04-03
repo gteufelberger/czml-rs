@@ -106,7 +106,7 @@ pub struct Path {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<primitives::Color>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    material: Option<primitives::Material>,
+    pub material: Option<primitives::Material>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub outline_color: Option<primitives::Color>,
     #[serde(skip_serializing_if = "Option::is_none")]
