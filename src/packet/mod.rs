@@ -13,7 +13,7 @@ pub mod primitives;
 #[serde(deny_unknown_fields)]
 pub struct Billboard {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<bool>,
+    pub show: Option<primitives::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub image: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -52,7 +52,7 @@ pub struct Clock {
 #[serde(deny_unknown_fields)]
 pub struct Label {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<bool>,
+    pub show: Option<primitives::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub pixel_offset: Option<primitives::PixelOffset>,
     #[serde(skip_serializing_if = "Option::is_none")]
