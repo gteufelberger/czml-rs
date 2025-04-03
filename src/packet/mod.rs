@@ -125,15 +125,15 @@ pub struct Path {
 #[serde(deny_unknown_fields)]
 pub struct Polyline {
     #[serde(skip_serializing_if = "Option::is_none")]
-    width: Option<u32>,
+    pub width: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    show: Option<Vec<primitives::ShowInterval>>,
+    pub show: Option<Vec<primitives::ShowInterval>>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    arc_type: Option<primitives::ArcType>,
+    pub arc_type: Option<primitives::ArcType>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    material: Option<primitives::Material>,
+    pub material: Option<primitives::Material>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    positions: Option<polyline::Position>,
+    pub positions: Option<polyline::Position>,
 }
 
 /// Path
