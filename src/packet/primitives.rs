@@ -26,6 +26,7 @@ pub enum InterpolationAlgorithms {
 pub enum Origin {
     Center,
     Left,
+    Right,
     Bottom,
 }
 
