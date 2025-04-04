@@ -26,4 +26,6 @@ pub struct Position {
     pub references: Option<Vec<String>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub cartesian: Option<Vec<super::primitives::Cartesian>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub cartographic_radians: Option<Vec<f64>>,
 }
