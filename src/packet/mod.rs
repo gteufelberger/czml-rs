@@ -138,7 +138,7 @@ pub struct Orientation {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub interpolation_degree: Option<i32>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub unit_quaternion: Option<[f64; 4]>,
+    pub unit_quaternion: Option<Vec<f64>>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub velocity_reference: Option<String>,
 }
