@@ -136,7 +136,7 @@ pub struct Polyline {
     pub positions: Option<polyline::Position>,
 }
 
-/// Path
+/// Position
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 #[serde(deny_unknown_fields)]
