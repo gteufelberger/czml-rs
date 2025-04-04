@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.11.0](https://github.com/gteufelberger/czml-rs/compare/v0.10.0...v0.11.0) (2025-04-04)
+
+
+### Features
+
+* Add support for `epoch` field in `orientation` object ([28b0ee5](https://github.com/gteufelberger/czml-rs/commit/28b0ee560703f8708b5ccc9bad671033771a9b3c))
+* Add support for `interpolationAlgorithm` field in `orientation` object ([6433e02](https://github.com/gteufelberger/czml-rs/commit/6433e0212db4d8ba81bbb39957374578d54d2e87))
+* Add support for `interpolationDegree` field in `orientation` object ([a993667](https://github.com/gteufelberger/czml-rs/commit/a99366709912a99ec2458bb8a35ef0627c7ef8ae))
+* Add support for `point` object ([f0e3ea1](https://github.com/gteufelberger/czml-rs/commit/f0e3ea1d7bb20498b0c1ce9aed56986c5cdc521e))
+* Add support for `reference` field in `position` object ([ce685a3](https://github.com/gteufelberger/czml-rs/commit/ce685a38edbbe0e901c310f9bc725c50812981fc))
+
+
+### Bug Fixes
+
+* `show` field in `polyline` object can be bool or object array ([4a5cfa4](https://github.com/gteufelberger/czml-rs/commit/4a5cfa4c6c431bcd22c6fb1e571188b59d1770f7))
+
 ## [0.10.0](https://github.com/gteufelberger/czml-rs/compare/v0.9.1...v0.10.0) (2025-04-04)
 
 
