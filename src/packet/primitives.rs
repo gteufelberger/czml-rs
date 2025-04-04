@@ -16,6 +16,12 @@ pub enum Cartesian {
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum ForwardExtrapolationType {
+    Hold,
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum InterpolationAlgorithms {
     Lagrange,
     Linear,

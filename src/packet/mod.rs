@@ -146,6 +146,8 @@ pub struct Position {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub epoch: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub forward_extrapolation_type: Option<primitives::ForwardExtrapolationType>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub interpolation_algorithm: Option<primitives::InterpolationAlgorithms>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub interpolation_degree: Option<i32>,
