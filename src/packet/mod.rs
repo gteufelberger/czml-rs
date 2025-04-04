@@ -168,6 +168,8 @@ pub struct Position {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub interpolation_degree: Option<i32>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub reference: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub reference_frame: Option<primitives::ReferenceFrames>,
 }
 
