@@ -18,6 +18,7 @@ pub enum Cartesian {
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum InterpolationAlgorithms {
     Lagrange,
+    Linear,
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
