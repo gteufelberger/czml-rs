@@ -3,6 +3,7 @@ use serde::{Deserialize, Serialize};
 pub mod billboard;
 pub mod clock;
 pub mod label;
+pub mod path;
 pub mod polyline;
 pub mod primitives;
 pub mod type_enums;
@@ -158,9 +159,9 @@ pub struct Path {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub outline_width: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub lead_time: Option<u32>,
+    pub lead_time: Option<type_enums::NumberOrPathLeadTrailInterval>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub trail_time: Option<u32>,
+    pub trail_time: Option<type_enums::NumberOrPathLeadTrailInterval>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub resolution: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]

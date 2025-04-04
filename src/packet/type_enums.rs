@@ -27,3 +27,10 @@ pub enum ColorOrColorInterval {
     Single(super::primitives::Color),
     Multiple(Vec<super::primitives::ColorInterval>),
 }
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(untagged)]
+pub enum NumberOrPathLeadTrailInterval {
+    Single(u32),
+    Intervals(Vec<super::path::PathLeadTrailInterval>),
+}
