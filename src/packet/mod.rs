@@ -135,7 +135,7 @@ pub struct Polyline {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub width: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub show: Option<Vec<primitives::ShowInterval>>,
+    pub show: Option<type_enums::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub arc_type: Option<primitives::ArcType>,
     #[serde(skip_serializing_if = "Option::is_none")]
