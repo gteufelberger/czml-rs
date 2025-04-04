@@ -97,6 +97,8 @@ pub struct Model {
 #[serde(deny_unknown_fields)]
 pub struct Orientation {
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub epoch: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub unit_quaternion: Option<[f64; 4]>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub velocity_reference: Option<String>,
