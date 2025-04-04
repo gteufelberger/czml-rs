@@ -16,8 +16,8 @@ pub enum BooleanOrShowObjectVec {
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(untagged)]
-pub enum IntegerOrNumberObjectVec {
-    Single(u32),
+pub enum FloatOrNumberObjectVec {
+    Single(f64),
     Multiple(Vec<super::primitives::NumberInterval>),
 }
 

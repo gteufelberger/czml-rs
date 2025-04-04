@@ -116,7 +116,7 @@ pub struct Path {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub trail_time: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub width: Option<type_enums::IntegerOrNumberObjectVec>,
+    pub width: Option<type_enums::FloatOrNumberObjectVec>,
 }
 
 /// Polyline

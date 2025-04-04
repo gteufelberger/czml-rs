@@ -79,5 +79,5 @@ pub struct ColorInterval {
 #[serde(deny_unknown_fields)]
 pub struct NumberInterval {
     pub interval: String,
-    pub number: u32,
+    pub number: f64,
 }
