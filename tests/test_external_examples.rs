@@ -2,7 +2,6 @@ use czml::Packet;
 use reqwest;
 use serde_json;
 
-#[ignore]
 #[test]
 fn test_deserialize_vehicle_example_from_github() {
     let url =
