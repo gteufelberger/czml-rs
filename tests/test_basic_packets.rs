@@ -22,6 +22,7 @@ fn test_just_document_packet() {
         parent: None,
         path: None,
         point: None,
+        polygon: None,
         polyline: None,
         position: None,
         view_from: None,

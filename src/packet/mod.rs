@@ -148,6 +148,25 @@ pub struct Point {
     pub show: Option<type_enums::BooleanOrShowObjectVec>,
 }
 
+/// Polygon
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Polygon {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub color: Option<type_enums::ColorOrColorInterval>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub fill: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub material: Option<primitives::Material>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub outline: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub outline_color: Option<type_enums::ColorOrColorInterval>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub positions: Option<polyline::Position>,
+}
+
 /// Polyline
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
