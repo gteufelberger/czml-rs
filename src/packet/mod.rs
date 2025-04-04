@@ -164,3 +164,12 @@ pub struct Position {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub reference_frame: Option<primitives::ReferenceFrames>,
 }
+
+/// viewFrom
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct ViewFrom {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub cartesian: Option<Vec<primitives::Cartesian>>,
+}

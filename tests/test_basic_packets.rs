@@ -23,6 +23,7 @@ fn test_just_document_packet() {
         path: None,
         polyline: None,
         position: None,
+        view_from: None,
         properties: None,
     };
 
