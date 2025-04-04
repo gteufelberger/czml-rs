@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.0.0](https://github.com/gteufelberger/czml-rs/compare/v0.11.0...v1.0.0) (2025-04-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Revise README warning message
+
+### Features
+
+* Add support for `agi_rectangularSensor` object ([86ffbbe](https://github.com/gteufelberger/czml-rs/commit/86ffbbeeb3e3e0f7166b9a28728ecc348bae7031))
+* Add support for `cartographicRadians` field in `position` object ([47d6a4b](https://github.com/gteufelberger/czml-rs/commit/47d6a4bd1e8eb21b76050ffb14e2a316cdc90e13))
+* Add support for `polygon` object ([0afc0cf](https://github.com/gteufelberger/czml-rs/commit/0afc0cf91e6e5f28c464dbeb378112d112cf4a9d))
+* Allow `unitQuaternion` array to be longer than 4 elements ([f1f1b89](https://github.com/gteufelberger/czml-rs/commit/f1f1b89c4a4b7497ca63007afbe6f54bf4b613af))
+* Handle `leadTime` and `trailTime` being intervals ([4a45c17](https://github.com/gteufelberger/czml-rs/commit/4a45c1751573ccbd038482b89451dbb4bab8ad19))
+
+
+### Bug Fixes
+
+* Clippy error on doc comment ([74173a1](https://github.com/gteufelberger/czml-rs/commit/74173a12597337d68736737f6830afd8847b5109))
+* Handle width related values as floats ([dac3427](https://github.com/gteufelberger/czml-rs/commit/dac3427edbcb44751ea39b6f9750bfd04ed0d036))
+* Remove empty doc comment ([25e9bc5](https://github.com/gteufelberger/czml-rs/commit/25e9bc5585d2968d258916610abb13b3d3f7cd9b))
+
+
+### Documentation
+
+* Revise README warning message ([fb22474](https://github.com/gteufelberger/czml-rs/commit/fb22474aa6a374241b9085d9aec54e1562f696ec))
+
 ## [0.11.0](https://github.com/gteufelberger/czml-rs/compare/v0.10.0...v0.11.0) (2025-04-04)
 
 
