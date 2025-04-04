@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/gteufelberger/czml-rs/compare/v1.0.0...v1.1.0) (2025-04-04)
+
+
+### Features
+
+* Allow timestamps in `unitQuaternion` ([64019f4](https://github.com/gteufelberger/czml-rs/commit/64019f4fdb7e7dab81a39bbc2fdc69d5d76faac2))
+
+
+### Bug Fixes
+
+* **docs:** Use correct alt text for test badge ([ed9fb54](https://github.com/gteufelberger/czml-rs/commit/ed9fb54cbec8b786d18f7847f50290047fd1e00c))
+
 ## [1.0.0](https://github.com/gteufelberger/czml-rs/compare/v0.11.0...v1.0.0) (2025-04-04)
 
 
