@@ -67,6 +67,8 @@ pub struct Label {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub outline_color: Option<type_enums::ColorOrColorInterval>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub outline_width: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub scale: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub style: Option<label::Style>,
