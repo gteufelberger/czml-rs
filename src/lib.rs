@@ -46,6 +46,9 @@ pub struct Packet {
     pub path: Option<packet::Path>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub point: Option<packet::Point>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub polyline: Option<packet::Polyline>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -77,6 +80,7 @@ mod tests {
             orientation: None,
             parent: None,
             path: None,
+            point: None,
             polyline: None,
             position: None,
             view_from: None,

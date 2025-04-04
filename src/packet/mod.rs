@@ -133,6 +133,21 @@ pub struct Path {
     pub width: Option<type_enums::FloatOrNumberObjectVec>,
 }
 
+/// Point
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Point {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub color: Option<type_enums::ColorOrColorInterval>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub outline_width: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub pixel_size: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub show: Option<type_enums::BooleanOrShowObjectVec>,
+}
+
 /// Polyline
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]

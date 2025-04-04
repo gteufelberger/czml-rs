@@ -21,6 +21,7 @@ fn test_just_document_packet() {
         orientation: None,
         parent: None,
         path: None,
+        point: None,
         polyline: None,
         position: None,
         view_from: None,
