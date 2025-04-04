@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.10.0](https://github.com/gteufelberger/czml-rs/compare/v0.9.1...v0.10.0) (2025-04-04)
+
+
+### Features
+
+* Add `LINEAR` as interpolation algorithm option ([7465eb2](https://github.com/gteufelberger/czml-rs/commit/7465eb26c948b65dc150512275884d78e5d0049d))
+* Add dependabot support ([1b37418](https://github.com/gteufelberger/czml-rs/commit/1b37418901c6ec35bdaa8655e4e1ff5a55ac65ac))
+* Add support for `cartesian` in polyline position ([c30d43c](https://github.com/gteufelberger/czml-rs/commit/c30d43cfc5809588c49ce7536ad755390884d44c))
+* Add support for `clamp_to_ground` field in polyline object ([0be02c9](https://github.com/gteufelberger/czml-rs/commit/0be02c9d6135934acf76beb4e63ff5c40403a3a8))
+* Add support for `forwardExtrapolationType` field in position object ([83c04fa](https://github.com/gteufelberger/czml-rs/commit/83c04fa2183fd5be94787a95ed96f23a9b6c6472))
+* Add support for `maximumScale` field in `model` object ([74fc208](https://github.com/gteufelberger/czml-rs/commit/74fc2089ce7132d0fdff96e769aa8805c09c569e))
+* Add support for `outline_width` field in label object ([f50974c](https://github.com/gteufelberger/czml-rs/commit/f50974c38bbb7ca543256c1d3309ee60a62915b6))
+* Add support for `polylineOutline` object ([4a83bcc](https://github.com/gteufelberger/czml-rs/commit/4a83bcc80d9edd0c66b069af2555f5c3d7a362e4))
+* Add support for `resolution` field in path object ([a28f4cb](https://github.com/gteufelberger/czml-rs/commit/a28f4cbbd2a5fde2f6c3cef3946d805313024ce4))
+* Add support for `velocityReference` field in `orientation` object ([2448ace](https://github.com/gteufelberger/czml-rs/commit/2448ace9878258fc9183944b991a841a89500e0c))
+* Add support for `viewFrom` object ([07eac8d](https://github.com/gteufelberger/czml-rs/commit/07eac8d96c66eb9cd12c7dbbe85c8b96e03cbdc3))
+
+
+### Bug Fixes
+
+* `width` can also be a float ([7573234](https://github.com/gteufelberger/czml-rs/commit/75732342870dde56a12e913e781d0eba6b55ff64))
+* Add missing serde rename ([b0d51fc](https://github.com/gteufelberger/czml-rs/commit/b0d51fcb9d02926c494ce84e73d5a9aa7c961e1f))
+* **docs:** Update incorrect comment ([88e56fa](https://github.com/gteufelberger/czml-rs/commit/88e56fa355c8a5b06d36cd2701005ffe3c456489))
+
 ## [0.9.1](https://github.com/gteufelberger/czml-rs/compare/v0.9.0...v0.9.1) (2025-04-03)
 
 
