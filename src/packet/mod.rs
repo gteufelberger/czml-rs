@@ -156,7 +156,7 @@ pub struct Path {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub outline_color: Option<primitives::Color>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub outline_width: Option<u32>,
+    pub outline_width: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub lead_time: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -207,7 +207,7 @@ pub struct Polygon {
 #[serde(deny_unknown_fields)]
 pub struct Polyline {
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub width: Option<u32>,
+    pub width: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub show: Option<type_enums::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
