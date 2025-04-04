@@ -86,6 +86,8 @@ pub struct Model {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub scale: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
+    pub maximum_scale: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub minimum_pixel_size: Option<u32>,
 }
 
