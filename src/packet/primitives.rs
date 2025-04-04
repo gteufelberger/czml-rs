@@ -15,6 +15,13 @@ pub enum Cartesian {
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(untagged)]
+pub enum UnitQuaternion {
+    Timestamp(String),
+    Angle(f64),
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ForwardExtrapolationType {
     Hold,
