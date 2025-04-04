@@ -14,4 +14,6 @@ pub struct SolidColor {
 pub struct Position {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub references: Option<Vec<String>>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub cartesian: Option<Vec<super::primitives::Cartesian>>,
 }
