@@ -12,6 +12,7 @@ fn test_just_document_packet() {
         id: "document".to_string(),
         name: None,
         version: Some("1.0".to_string()),
+        agi_rectangular_sensor: None,
         availability: None,
         billboard: None,
         clock: None,

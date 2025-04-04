@@ -7,6 +7,40 @@ pub mod polyline;
 pub mod primitives;
 pub mod type_enums;
 
+/// rectangular sensor
+/// https://cesium.com/learn/ion-sdk/ref-doc/RectangularSensor.html
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct AgiRectangularSensor {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub x_half_angle: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub y_half_angle: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub radius: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub show: Option<type_enums::BooleanOrShowObjectVec>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub portion_to_display: Option<primitives::PortionToDisplay>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub show_intersection: Option<type_enums::BooleanOrShowObjectVec>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub intersection_color: Option<primitives::Color>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub intersection_width: Option<f64>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub ellipsoid_surface_material: Option<primitives::SurfaceMaterial>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub ellipsoid_horizon_surface_material: Option<primitives::SurfaceMaterial>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub lateral_surface_material: Option<primitives::SurfaceMaterial>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub dome_surface_material: Option<primitives::SurfaceMaterial>,
+}
+
 /// A billboard is a viewport-aligned image positioned in the 3D scene
 /// https://cesium.com/learn/cesiumjs/ref-doc/Billboard.html
 #[derive(Debug, Serialize, Deserialize, PartialEq)]

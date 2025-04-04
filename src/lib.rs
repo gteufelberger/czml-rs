@@ -16,6 +16,10 @@ pub struct Packet {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub version: Option<String>,
 
+    #[serde(skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "agi_rectangularSensor")]
+    pub agi_rectangular_sensor: Option<packet::AgiRectangularSensor>,
+
     /// Time interval of validity (ISO 8601 string or array of intervals)
     #[serde(skip_serializing_if = "Option::is_none")]
     pub availability: Option<packet::type_enums::StringOrVec>,
@@ -74,6 +78,7 @@ mod tests {
             id: "document".to_string(),
             name: None,
             version: Some("1.0".to_string()),
+            agi_rectangular_sensor: None,
             availability: None,
             billboard: None,
             clock: None,
