@@ -33,6 +33,8 @@ pub enum InterpolationAlgorithms {
 pub struct Material {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub solid_color: Option<super::polyline::SolidColor>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub polyline_outline: Option<super::polyline::PolylineOutline>,
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
