@@ -13,7 +13,6 @@ A library for serializing/deserializing CZML content
     <img src="https://raw.githubusercontent.com/gteufelberger/czml-rs/refs/heads/main/resources/logo.png" alt="Project logo">
 </p>
 
-
 ## Contribution
 
 Contributions are highly welcome!
