@@ -10,7 +10,7 @@
 A library for serializing/deserializing CZML content
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/quentinbaradat/czml-rs/master/resources/logo.png" alt="Project logo">
+    <img src="https://raw.githubusercontent.com/gteufelberger/czml-rs/refs/heads/main/resources/logo.png" alt="Project logo">
 </p>
 
 
