@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/gteufelberger/czml-rs/compare/v1.1.0...v1.2.0) (2025-04-22)
+
+
+### Features
+
+* Add support for `cartographicDegrees` field in `position` object ([f61d3f4](https://github.com/gteufelberger/czml-rs/commit/f61d3f4a4a03c3c23bf35e6019820f7e3b591f67))
+
 ## [1.1.0](https://github.com/gteufelberger/czml-rs/compare/v1.0.0...v1.1.0) (2025-04-04)
 
 
