@@ -22,6 +22,12 @@ pub enum UnitQuaternion {
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+pub struct Dimensions {
+    pub cartesian: [f64; 3],
+}
+
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ForwardExtrapolationType {
     Hold,

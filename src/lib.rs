@@ -28,6 +28,10 @@ pub struct Packet {
     pub billboard: Option<packet::Billboard>,
 
     #[serde(skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "box")]
+    pub box_field: Option<packet::Box>,
+
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub clock: Option<packet::Clock>,
 
     /// A plain text or HTML description of the packet
@@ -81,6 +85,7 @@ mod tests {
             agi_rectangular_sensor: None,
             availability: None,
             billboard: None,
+            box_field: None,
             clock: None,
             description: None,
             label: None,

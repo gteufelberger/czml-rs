@@ -64,6 +64,16 @@ pub struct Billboard {
     pub vertical_origin: Option<primitives::Origin>,
 }
 
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Box {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub dimensions: Option<primitives::Dimensions>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub material: Option<primitives::Material>,
+}
+
 /// A clock used to drive the time-dynamic aspects of a document.
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]

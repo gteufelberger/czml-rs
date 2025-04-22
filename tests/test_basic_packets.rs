@@ -15,6 +15,7 @@ fn test_just_document_packet() {
         agi_rectangular_sensor: None,
         availability: None,
         billboard: None,
+        box_field: None,
         clock: None,
         description: None,
         label: None,
