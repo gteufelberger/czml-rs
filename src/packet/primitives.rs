@@ -93,7 +93,7 @@ pub struct ShowInterval {
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
 #[serde(rename_all = "camelCase")]
 pub struct Color {
-    pub rgba: [u8; 4],
+    pub rgba: [f64; 4],
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
