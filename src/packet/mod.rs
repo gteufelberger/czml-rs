@@ -240,6 +240,8 @@ pub struct Position {
     pub reference: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub reference_frame: Option<primitives::ReferenceFrames>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub cartographic_degrees: Option<[f64; 3]>,
 }
 
 /// viewFrom
