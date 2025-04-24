@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/gteufelberger/czml-rs/compare/v1.2.0...v2.0.0) (2025-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add support for `box` object
+
+### Features
+
+* Add support for `box` object ([5b520e9](https://github.com/gteufelberger/czml-rs/commit/5b520e91f6c7173b77984367cbe9f4b4c4b7cdf6))
+
+
+### Bug Fixes
+
+* Allow colour values to be floating point numbers ([2bd1b5b](https://github.com/gteufelberger/czml-rs/commit/2bd1b5bb593b0ae2b2aa438fdbd0e7c1c63ae6b8))
+
 ## [1.2.0](https://github.com/gteufelberger/czml-rs/compare/v1.1.0...v1.2.0) (2025-04-22)
 
 
