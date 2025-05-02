@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/gteufelberger/czml-rs/compare/v2.0.0...v3.0.0) (2025-05-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add support for `cylinder` object
+
+### Features
+
+* Add support for `cylinder` object ([f46296b](https://github.com/gteufelberger/czml-rs/commit/f46296b1e3cac7ff9b5c5db56c1c9dc0e5654880))
+
 ## [2.0.0](https://github.com/gteufelberger/czml-rs/compare/v1.2.0...v2.0.0) (2025-04-22)
 
 
