@@ -34,6 +34,9 @@ pub struct Packet {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub clock: Option<packet::Clock>,
 
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub cylinder: Option<packet::Cylinder>,
+
     /// A plain text or HTML description of the packet
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
@@ -87,6 +90,7 @@ mod tests {
             billboard: None,
             box_field: None,
             clock: None,
+            cylinder: None,
             description: None,
             label: None,
             model: None,

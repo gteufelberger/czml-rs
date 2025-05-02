@@ -262,3 +262,18 @@ pub struct ViewFrom {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub cartesian: Option<Vec<primitives::Cartesian>>,
 }
+
+/// Cylinder
+#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[serde(rename_all = "camelCase")]
+#[serde(deny_unknown_fields)]
+pub struct Cylinder {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub length: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub top_radius: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub bottom_radius: Option<f64>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub material: Option<primitives::Material>,
+}
