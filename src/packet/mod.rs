@@ -161,13 +161,7 @@ pub struct Path {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub show: Option<type_enums::BooleanOrShowObjectVec>,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub color: Option<primitives::Color>,
-    #[serde(skip_serializing_if = "Option::is_none")]
     pub material: Option<primitives::Material>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub outline_color: Option<primitives::Color>,
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub outline_width: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub lead_time: Option<type_enums::NumberOrPathLeadTrailInterval>,
     #[serde(skip_serializing_if = "Option::is_none")]

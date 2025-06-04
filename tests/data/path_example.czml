@@ -8,25 +8,20 @@
     "id": "something",
     "name": "Something",
     "path": {
-      "color": {
-        "rgba": [
-          255,
-          255,
-          255,
-          255
-        ]
-      },
-      "outlineColor": {
-        "rgba": [
-          0,
-          0,
-          0,
-          255
-        ]
+      "material": {
+        "solidColor": {
+          "color": {
+            "rgba": [
+              255,
+              255,
+              255,
+              255
+            ]
+          }
+        }
       },
       "leadTime": 0,
       "trailTime": 120,
-      "outlineWidth": 2,
       "width": 5
     }
   }
