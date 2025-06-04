@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/gteufelberger/czml-rs/compare/v3.0.0...v4.0.0) (2025-06-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove incorrect fields from `path` object
+
+### Bug Fixes
+
+* Remove incorrect fields from `path` object ([4891b3b](https://github.com/gteufelberger/czml-rs/commit/4891b3b6233ad8bb6d404f5d9fa52ba39e19bbd4))
+
 ## [3.0.0](https://github.com/gteufelberger/czml-rs/compare/v2.0.0...v3.0.0) (2025-05-02)
 
 
