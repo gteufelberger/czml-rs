@@ -86,6 +86,7 @@ pub enum PortionToDisplay {
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ReferenceFrames {
     Inertial,
+    Fixed,
 }
 
 #[derive(Debug, Serialize, Deserialize, PartialEq)]
