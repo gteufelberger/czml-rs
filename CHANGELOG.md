@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/gteufelberger/czml-rs/compare/v4.0.0...v4.1.0) (2025-07-02)
+
+
+### Features
+
+* Add support for fixed reference frame ([522ad8b](https://github.com/gteufelberger/czml-rs/commit/522ad8b017af9d51fe8ee67c66bc38c39ae62170))
+
 ## [4.0.0](https://github.com/gteufelberger/czml-rs/compare/v3.0.0...v4.0.0) (2025-06-04)
 
 
